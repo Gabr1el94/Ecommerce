@@ -16,7 +16,7 @@ import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
 @Entity
-@Table(name = "ecommercecr", catalog = "shopping_cart_db")
+@Table(name = "ecommercecr")
 public class Carrinho implements Serializable {
 	
 	private static final long serialVersionUID = -2609445365200642674L;

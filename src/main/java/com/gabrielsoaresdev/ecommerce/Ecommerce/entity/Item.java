@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "ecommerceit", catalog = "shopping_cart_db")
+@Table(name = "ecommerceit")
 public class Item implements Serializable {
 	
 	private static final long serialVersionUID = -2026009079929881719L;
