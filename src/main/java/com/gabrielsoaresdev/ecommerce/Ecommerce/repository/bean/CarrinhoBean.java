@@ -31,8 +31,7 @@ public class CarrinhoBean implements CarrinhoDao{
 	@Override
 	public Carrinho buscarCarrinhoByID(Long idCarrinho) {
 		String queryString = "FROM Carrinho WHERE idCarrinho = :idCarrinho";
-		Carrinho resultCarrinho = (Carrinho) sessionFactory.getCurrentSession()
-		.createQuery(queryString)
+		Carrinho resultCarrinho = (Carrinho) sessionFactory.getCurrentSession().createQuery(queryString)
 		.setParameter("idCarrinho", idCarrinho)
 		.uniqueResult();
 		

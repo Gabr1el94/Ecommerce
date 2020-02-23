@@ -65,4 +65,9 @@ public class CupomService implements ICupom{
 		return true;
 	}
 
+	@Override
+	public Cupom buscarCupomByID(Long idCupom) {
+		return (Cupom) cupomBean.buscarCupomByID(idCupom);
+	}
+
 }

@@ -37,5 +37,19 @@ public class CupomBean implements CupomDao{
 	public Long registrarCupom(Cupom cupom) {
 		return (Long) sessionFactory.getCurrentSession().save(cupom);
 	}
+	
+	@Override
+	public Cupom buscarCupomByID(Long idCupom) {
+		String queryString = "FROM Cupom WHERE idCarrinho = :idCarrinho";
+		Cupom resultCupom = (Cupom) sessionFactory.getCurrentSession().createQuery(queryString)
+		.setParameter("idCarrinho", idCupom).uniqueResult();
+		
+		if (resultCupom!=null) {
+			return resultCupom;
+		}
+		
+		return null;
+	}
+	
 
 }

@@ -28,7 +28,7 @@ public class Cupom implements Serializable{
 	@Column(name = "ecommercecp02",nullable = false)
 	private Integer quantidade;
 	
-	@Column(name = "ecommercecp03",nullable = false,precision = 12,scale = 2)
+	@Column(name = "ecommercecp03",nullable = false,precision = 5,scale = 4)
 	private BigDecimal valor;
 	
 	@Column(name = "ecommercecp04",nullable = false)

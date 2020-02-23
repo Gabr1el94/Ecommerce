@@ -48,6 +48,4 @@ public class CupomController {
 		}
 		return new ResponseEntity<String>("Error durante a registrar o cupom",HttpStatus.INTERNAL_SERVER_ERROR);
 	}
-	
-
 }

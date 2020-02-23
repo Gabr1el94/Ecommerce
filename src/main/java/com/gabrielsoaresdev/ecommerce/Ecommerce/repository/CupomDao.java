@@ -9,5 +9,7 @@ public interface CupomDao {
 	public List<Cupom> cupons();
 	
 	public Long registrarCupom(Cupom cupom);
-
+	
+	public Cupom buscarCupomByID(Long idCupom);
+	
 }

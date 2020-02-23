@@ -10,4 +10,6 @@ public interface ICupom {
 	
 	public boolean registrarCupom(Cupom cupom);
 	
+	public Cupom buscarCupomByID(Long idCupom);
+	
 }
