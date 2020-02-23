@@ -51,7 +51,7 @@ public class Carrinho implements Serializable {
 		return this.idCarrinho;
 	}
 
-	void setIdCarrinho(Long idCart) {
+	public void setIdCarrinho(Long idCart) {
 		this.idCarrinho = idCart;
 	}
 
@@ -59,7 +59,7 @@ public class Carrinho implements Serializable {
 		return this.subtotal;
 	}
 
-	void setSubtotal(BigDecimal subtotal) {
+	public void setSubtotal(BigDecimal subtotal) {
 		this.subtotal = subtotal;
 	}
 
@@ -67,7 +67,7 @@ public class Carrinho implements Serializable {
 		return this.items;
 	}
 
-	void setItems(List<Item> items) {
+	public void setItems(List<Item> items) {
 		this.items = items;
 	}
 	

@@ -29,7 +29,7 @@ public class Produto implements Serializable {
 	private Long idProduto;
 
 	@Column(name = "ecommercepd01", nullable = false, length = 100)
-	private String description;
+	private String descricao;
 
 	@Column(name = "ecommercepd02", nullable = false, precision = 12,scale = 2)
 	private BigDecimal price;
@@ -42,22 +42,22 @@ public class Produto implements Serializable {
 	}
 
 	public Produto(String description, BigDecimal price) {
-		this.description = description;
+		this.descricao = description;
 		this.price = price;
 	}
 
 	public Produto(String description, BigDecimal price, List<Item> linesItems) {
-		this.description = description;
+		this.descricao = description;
 		this.price = price;
 		this.linesItems = linesItems;
 	}
 
-	public String getDescription() {
-		return this.description;
+	public String getDescricao() {
+		return this.descricao;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDescricao(String description) {
+		this.descricao = description;
 	}
 
 	public BigDecimal getPrice() {

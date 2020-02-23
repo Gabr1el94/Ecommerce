@@ -8,6 +8,6 @@ public interface ICupom {
 
 	public List<Cupom> cupons();
 	
-	public boolean registrarCupom();
+	public boolean registrarCupom(Cupom cupom);
 	
 }

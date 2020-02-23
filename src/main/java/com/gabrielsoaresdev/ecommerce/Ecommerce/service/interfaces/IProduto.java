@@ -8,6 +8,6 @@ public interface IProduto {
 	
 	public List<Produto> produtos();
 	
-	public boolean registrarProduto();
+	public boolean registrarProduto(Produto produto);
 
 }
