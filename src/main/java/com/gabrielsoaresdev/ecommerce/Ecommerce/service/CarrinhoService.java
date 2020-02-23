@@ -48,6 +48,7 @@ public class CarrinhoService implements ICarrinho{
 			Produto buscaProduto = produtoDao.buscarProdutoByID(idProduto);
 			if (validacaoCarrinhoProduto(buscaCarrinho,buscaProduto,quantity)) {
 				buscaCarrinho.getItems().add(new Item(buscaCarrinho, buscaProduto, quantity,buscaProduto.getPrice()));
+				buscaCarrinho.setSubtotal(buscaCarrinho.calculateTotal());
 				carrinhoDao.adicionarProdutoCarrinho(buscaCarrinho);
 				return true;
 			}
